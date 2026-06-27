@@ -216,16 +216,16 @@ p  { margin: 0 0 1rem; }
   padding-block: clamp(56px, 9vw, 100px);
 }
 .footer__inner {
-  display: flex; flex-direction: column; align-items: center; text-align: center;
+  display: flex; flex-direction: column; align-items: flex-start; text-align: left;
   gap: clamp(2.4rem, 6vw, 3.5rem);
 }
 
 /* Wordmark */
 .site-footer .brand__name { font-size: 1.7rem; }
-.footer__tag { color: var(--text-mute); max-width: 40ch; margin: 1rem auto 0; font-size: 0.95rem; line-height: 1.6; }
+.footer__tag { color: var(--text-mute); max-width: 40ch; margin: 1rem 0 0; font-size: 0.95rem; line-height: 1.6; }
 
 /* Nav — simple, generously spaced */
-.footer__nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem 2.5rem; }
+.footer__nav { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 1rem 2.5rem; }
 .footer__nav a { font-size: 0.98rem; color: var(--text-soft); transition: color .2s ease; }
 .footer__nav a:hover { color: #fff; }
 
