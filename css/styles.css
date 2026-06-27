@@ -134,6 +134,7 @@ p  { margin: 0 0 1rem; }
 .caret { width: 9px; height: 9px; opacity: .7; }
 
 .nav__cta { display: flex; align-items: center; gap: 0.6rem; }
+.nav__speak-icon { display: none; width: 20px; height: 20px; }
 
 /* Hamburger */
 .nav__toggle {
@@ -297,7 +298,13 @@ p  { margin: 0 0 1rem; }
     transform: translateY(-120%); transition: transform .3s ease;
     gap: 0.2rem;
   }
-  .nav__cta { top: auto; position: static; transform: none; background: none; border: 0; padding-top: 1rem; }
+  /* Keep the CTA in the top bar as a compact message icon (avoids 2-line wrap) */
+  .brand { margin-right: auto; }
+  .nav__cta { position: static; transform: none; background: none; border: 0; padding: 0; order: 2; }
+  .nav__toggle { order: 3; margin-left: 0.4rem; }
+  .nav__speak { padding: 0.55rem; border-radius: 50%; line-height: 0; }
+  .nav__speak .nav__speak-text { display: none; }
+  .nav__speak .nav__speak-icon { display: block; }
   .nav.open .nav__menu { transform: translateY(0); }
   .nav__menu { z-index: 90; box-shadow: 0 20px 30px rgba(0,0,0,.4); }
   .dropdown { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; background: var(--navy-800); margin: 4px 0 4px 1rem; }
