@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Choose Us — Veritas Counsel</title>
+  <meta name="description" content="Six reasons why corporate leaders and business owners choose Veritas Counsel: elite barristers from day one, AI-powered strategy, fixed fees, and true access to justice." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* Icon slot — replace the large-number display with an SVG icon */
+    .vrow__num {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 0.25rem;
+    }
+    .vrow__num svg {
+      width: 44px;
+      height: 44px;
+      color: var(--accent);
+      flex: none;
+    }
+
+    /* Hero intro paragraph */
+    .wcu-intro {
+      margin-top: 1.6rem;
+      color: var(--text-soft);
+      max-width: 56ch;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* Closing statement */
+    .wcu-close {
+      text-align: center;
+      padding-block: clamp(48px, 8vw, 96px);
+    }
+    .wcu-close__upper {
+      font-family: var(--ff-sans);
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0;
+    }
+    .wcu-close__mark {
+      width: 52px;
+      height: 52px;
+      margin: 1.4rem auto;
+      color: var(--accent);
+      display: block;
+    }
+    .wcu-close__lower {
+      font-family: var(--ff-sans);
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 0 0 2.2rem;
+    }
+
+    @media (max-width: 820px) {
+      .wcu-hero-img { order: -1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" id="nav">
+        <a class="brand" href="index.html" aria-label="Veritas Counsel home">
+          <svg class="brand__mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M24 4v40M9 14h30M14 14l-7 13a7 7 0 0014 0L14 14zM34 14l-7 13a7 7 0 0014 0L34 14z" stroke="#9e1b32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="24" cy="44" r="2.4" fill="#9e1b32"/>
+          </svg>
+          <span class="brand__name">VERITAS<small>COUNSEL</small></span>
+        </a>
+
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav__menu">
+          <li class="has-dropdown">
+            <a class="nav__link" href="about.html">About Us
+              <svg class="caret" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <ul class="dropdown">
+              <li><a href="why-choose-us.html">Why Choose Us</a></li>
+              <li><a href="what-we-do.html">What We Do</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a class="nav__link" href="what-we-do.html">Services
+              <svg class="caret" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <ul class="dropdown">
+              <li><a href="corporate-protection.html">Corporate Protection Programme&#x2122;</a></li>
+              <li><a href="corporate-debt-recovery.html">Corporate Debt Recovery Programme&#x2122;</a></li>
+              <li><a href="lifetime-planning.html">Corporate Lifetime Planning Programme&#x2122;</a></li>
+              <li><a href="what-we-do.html">Corporate Training Programme&#x2122;</a></li>
+            </ul>
+          </li>
+          <li><a class="nav__link" href="how-it-works.html">How It Works</a></li>
+          <li><a class="nav__link" href="membership.html">Membership</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav__cta">
+          <a class="btn btn--primary" data-calendly href="contact.html">Speak to a Specialist</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="split">
+        <div>
+          <p class="eyebrow">About Us</p>
+          <h1>Why Choose Us:<br>The <span style="color:var(--accent)">Veritas</span> Advantage</h1>
+          <hr class="rule" />
+          <p class="lead">Elite Strategy. Pre-emptive Protection.<br>Total Transparency.</p>
+          <p class="wcu-intro">We dismantle the traditional, slow-moving legal model. Here is exactly why corporate leaders, business owners, and ambitious individuals partner with Veritas.</p>
+        </div>
+        <div class="img-ph wcu-hero-img" data-ratio="4-3" data-label="Courthouse — Truth · Justice · Strategy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SIX VALUE PROPOSITIONS ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="vlist">
+
+        <!-- 1. Top of Our Game -->
+        <div class="vrow">
+          <div class="vrow__num" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="20" cy="19" r="8"/>
+              <path d="M8 43c0-6.6 5.4-12 12-12s12 5.4 12 12"/>
+              <!-- star badge -->
+              <path d="M36 7l1.4 4.2 4.4.4-3.2 2.9 1 4.3L36 16.2l-3.6 2.6 1-4.3-3.2-2.9 4.4-.4z" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <div>
+            <h3>1. Top of Our Game, From Day One</h3>
+            <p>In the traditional system, your file is processed by junior paralegals and trainee solicitors before a barrister is finally hired at the very end when things go wrong. Veritas flips this. You gain direct access to elite courtroom advocates and top-tier strategic minds from the absolute beginning of your matter.</p>
+          </div>
+        </div>
+
+        <!-- 2. Truth & Credibility -->
+        <div class="vrow">
+          <div class="vrow__num" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 5L38 10v11c0 9.4-6.3 17-14 20C16.3 38 10 30.4 10 21V10z"/>
+              <path d="M18 24l4 4 8-8" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <div>
+            <h3>2. The Power of Truth &amp; Unmatched Credibility</h3>
+            <p>Our name defines our standard. Veritas means truth. When our independent barristers communicate on your behalf, it carries instant, immense psychological weight. Opposing parties, debtors, and regulators know they are dealing directly with senior court operators. This credibility cuts through noise and resolves disputes rapidly.</p>
+          </div>
+        </div>
+
+        <!-- 3. AI on Steroids -->
+        <div class="vrow">
+          <div class="vrow__num" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- chip body -->
+              <rect x="13" y="13" width="22" height="22" rx="3"/>
+              <!-- pins -->
+              <path d="M19 9v4M24 9v4M29 9v4M19 35v4M24 35v4M29 35v4M9 19h4M9 24h4M9 29h4M35 19h4M35 24h4M35 29h4"/>
+              <!-- AI text replaced by inner circuit mark -->
+              <circle cx="24" cy="24" r="4"/>
+              <path d="M20 24h8M24 20v8" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div>
+            <h3>3. AI on Steroids, Built for Speed</h3>
+            <p>We are a modern legal powerhouse. Our pods utilize highly advanced legal AI infrastructure to automate routine compliance and use it as a review tool. Technology is only as good as the mind driving it. We couple this high-speed automation with elite barrister analysis, ensuring a deeper, sharper understanding of your position from the very outset, leading to faster solutions, saving costs.</p>
+          </div>
+        </div>
+
+        <!-- 4. Solution-Driven -->
+        <div class="vrow">
+          <div class="vrow__num" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="16"/>
+              <circle cx="24" cy="24" r="9"/>
+              <circle cx="24" cy="24" r="3" fill="currentColor" stroke="none"/>
+              <!-- arrow coming in -->
+              <path d="M34 14l6-6M40 8l-4 0 0 4"/>
+            </svg>
+          </div>
+          <div>
+            <h3>4. Solution-Driven &amp; Drastically Cost-Efficient</h3>
+            <p>Traditional law firms profit from billable hours, which can create disincentivised action. Our barristers understand exactly how cases run, therefore we can set out the process in identifiable steps, invite you to complete actions yourself to ensure you remain fully in control. We never complete work without you knowing what the cost is and you will always sign off work that gets sent out.</p>
+          </div>
+        </div>
+
+        <!-- 5. Fixed Fees -->
+        <div class="vrow">
+          <div class="vrow__num" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="11" y="22" width="26" height="20" rx="3"/>
+              <path d="M17 22v-6a7 7 0 0114 0v6"/>
+              <circle cx="24" cy="33" r="3"/>
+              <path d="M24 36v3"/>
+            </svg>
+          </div>
+          <div>
+            <h3>5. Absolute Price Certainty: Fixed Fees Only</h3>
+            <p>We believe the hourly rate is an outdated, adversarial way to charge for advice. Veritas operates strictly on transparent, predictable fixed fees and predictable monthly subscription retainers. You will never receive an unexpected bill. You know your costs upfront, enabling you to make clear, calculated commercial decisions. [1]</p>
+          </div>
+        </div>
+
+        <!-- 6. True Access to Justice -->
+        <div class="vrow">
+          <div class="vrow__num" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- base and top bar -->
+              <rect x="6" y="38" width="36" height="4" rx="1"/>
+              <path d="M6 18h36"/>
+              <!-- columns -->
+              <path d="M11 18v20M18 18v20M24 18v20M30 18v20M37 18v20"/>
+              <!-- pediment -->
+              <path d="M6 18L24 8l18 10"/>
+            </svg>
+          </div>
+          <div>
+            <h3>6. True Access to Justice</h3>
+            <p>The legal system has become too expensive, slow, and overly bureaucratic. Cutting out traditional law firm overheads, and using direct public access channels, we give you access to lawyers at your fingertips, building relationships in advance and allow you to get on with your day job. We bring the high-end legal armour and fight to deliver the truth.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CLOSING STATEMENT + CTA ===================== -->
+  <section class="section section--deep">
+    <div class="container">
+      <div class="wcu-close">
+        <p class="wcu-close__upper">We bring the high-end legal armour</p>
+        <svg class="wcu-close__mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M24 4v40M9 14h30M14 14l-7 13a7 7 0 0014 0L14 14zM34 14l-7 13a7 7 0 0014 0L34 14z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="44" r="2.4" fill="currentColor"/>
+        </svg>
+        <p class="wcu-close__lower">and fight to deliver the truth.</p>
+        <a class="btn btn--primary btn--lg" data-calendly href="contact.html">Speak to a Specialist</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <span class="brand__name" style="font-size:1.2rem;">VERITAS<small>COUNSEL</small></span>
+          <p style="margin-top:1rem; max-width:34ch;">Elite barristers. Practical protection. Direct access to senior legal minds.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="what-we-do.html">What We Do</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a data-calendly href="contact.html">Book a call &#x2192;</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__legal">
+        Veritas Counsel. Registered in England &amp; Wales, company no. 15700046.
+        &#169; <span id="year">2026</span> Veritas Counsel. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

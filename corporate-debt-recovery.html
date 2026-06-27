@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corporate Debt Recovery — Veritas Counsel</title>
+  <meta name="description" content="Barrister-led corporate debt recovery advice — recovering debts, responding to demands and improving credit control. Direct, strategic advice when payment becomes a problem." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ---- page-specific helpers (CSS variables only, no colour overrides) ---- */
+    .callout {
+      background: var(--navy-700);
+      border: 1px solid var(--line-strong);
+      border-radius: 10px;
+      padding: clamp(1.6rem, 3vw, 2.4rem);
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      align-self: start;
+    }
+    .callout__icon {
+      width: 48px;
+      height: 48px;
+      color: var(--accent);
+    }
+    .callout__headline {
+      font-family: var(--ff-serif);
+      font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--text);
+      margin: 0;
+    }
+    .callout p { color: var(--text-soft); margin: 0; font-size: 0.95rem; }
+
+    .learn-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      margin-top: 1.1rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-soft);
+      padding-bottom: 2px;
+      transition: color .2s ease, border-color .2s ease;
+    }
+    .learn-more:hover { color: #fff; border-color: rgba(255,255,255,.4); }
+
+    .detail-col { display: flex; flex-direction: column; gap: 0; }
+    .detail-col__head {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 0.9rem;
+    }
+    .detail-col__head svg { width: 30px; height: 30px; color: var(--accent); flex: none; }
+    .detail-col__head h3 { margin: 0; font-size: clamp(1.1rem, 1.9vw, 1.35rem); }
+    .detail-col p { color: var(--text-soft); font-size: 0.93rem; margin-bottom: 0.7rem; }
+    .detail-col .checklist { margin-bottom: 1rem; }
+    .detail-col .checklist li { font-size: 0.9rem; }
+
+    .contact-strip {
+      display: grid;
+      grid-template-columns: 1fr 60px 1fr;
+      gap: clamp(1.4rem, 4vw, 3rem);
+      align-items: center;
+    }
+    .contact-strip__divider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      color: var(--accent);
+    }
+    .contact-strip__divider svg { width: 44px; height: 44px; }
+    .contact-details { list-style: none; margin: 0.8rem 0 0; padding: 0; display: grid; gap: 0.45rem; }
+    .contact-details li { color: var(--text-soft); font-size: 0.93rem; }
+    .contact-details a { color: var(--accent); transition: color .2s ease; }
+    .contact-details a:hover { color: #fff; }
+
+    @media (max-width: 820px) {
+      .contact-strip { grid-template-columns: 1fr; }
+      .contact-strip__divider { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" id="nav">
+        <a class="brand" href="index.html" aria-label="Veritas Counsel home">
+          <svg class="brand__mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M24 4v40M9 14h30M14 14l-7 13a7 7 0 0014 0L14 14zM34 14l-7 13a7 7 0 0014 0L34 14z" stroke="#9e1b32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="24" cy="44" r="2.4" fill="#9e1b32"/>
+          </svg>
+          <span class="brand__name">VERITAS<small>COUNSEL</small></span>
+        </a>
+
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav__menu">
+          <li class="has-dropdown">
+            <a class="nav__link" href="about.html">About Us
+              <svg class="caret" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <ul class="dropdown">
+              <li><a href="why-choose-us.html">Why Choose Us</a></li>
+              <li><a href="what-we-do.html">What We Do</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a class="nav__link" href="what-we-do.html">Services
+              <svg class="caret" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <ul class="dropdown">
+              <li><a href="corporate-protection.html">Corporate Protection Programme™</a></li>
+              <li><a href="corporate-debt-recovery.html">Corporate Debt Recovery Programme™</a></li>
+              <li><a href="lifetime-planning.html">Corporate Lifetime Planning Programme™</a></li>
+              <li><a href="what-we-do.html">Corporate Training Programme™</a></li>
+            </ul>
+          </li>
+          <li><a class="nav__link" href="how-it-works.html">How It Works</a></li>
+          <li><a class="nav__link" href="membership.html">Membership</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav__cta">
+          <a class="btn btn--primary" data-calendly href="contact.html">Speak to a Specialist</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="split">
+        <div class="hero__inner">
+          <p class="eyebrow">Services</p>
+          <h1>Corporate<br>Debt Recovery</h1>
+          <hr class="rule" />
+          <p class="lead">Direct, strategic advice when payment becomes a problem.</p>
+        </div>
+        <div class="img-ph" data-ratio="4-3" data-label="Veritas Counsel — Debt Recovery"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INTRO + EARLY ADVICE CALLOUT ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="split">
+
+        <div class="prose">
+          <p>Cash flow is the lifeblood of every business. When invoices remain unpaid, the issue is rarely just about the money. It can affect confidence, management time, commercial relationships and the wider stability of your business.</p>
+          <p>At Veritas, we provide barrister-led advice on the most effective, proportionate and commercially sensible route to securing payment.</p>
+          <p>We do not simply chase debts. We assess the position, identify the pressure points and advise on the right strategy.</p>
+        </div>
+
+        <div class="callout">
+          <svg class="callout__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 6v36"/>
+            <path d="M10 18h28"/>
+            <path d="M14 18l-8 10a8 8 0 0016 0L14 18z"/>
+            <path d="M34 18l-8 10a8 8 0 0016 0L34 18z"/>
+            <path d="M18 42h12"/>
+          </svg>
+          <p class="eyebrow" style="margin:0;">Early Advice</p>
+          <p class="callout__headline">Early advice often produces the quickest and most economically satisfying outcome.</p>
+          <p>Speak to a barrister today to discuss your debt recovery or payment dispute and receive clear, practical advice tailored to your circumstances.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== THREE CARDS ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head center">
+        <p class="eyebrow">How We Help</p>
+        <h2>What Brings You Here?</h2>
+      </div>
+      <div class="grid grid--3">
+
+        <div class="card">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 6h14l8 8v28H14z"/>
+            <path d="M28 6v8h8"/>
+            <path d="M20 26h10M20 32h6"/>
+            <circle cx="20" cy="20" r="3"/>
+          </svg>
+          <h3>Recovering a Debt</h3>
+          <p>You have not been paid, and need practical solutions to recover what is owed.</p>
+          <a class="learn-more" href="#recovering-a-debt">Learn more &#8594;</a>
+        </div>
+
+        <div class="card">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 6l14 6v12c0 10-6 18-14 20C16 42 10 34 10 24V12l14-6z"/>
+            <path d="M18 24l4 4 8-8"/>
+          </svg>
+          <h3>Responding to a Demand</h3>
+          <p>You have received a demand for payment and need to understand your rights and options.</p>
+          <a class="learn-more" href="#responding-to-a-demand">Learn more &#8594;</a>
+        </div>
+
+        <div class="card">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="18" cy="16" r="6"/>
+            <circle cx="33" cy="19" r="5"/>
+            <path d="M8 40c0-6 5-10 10-10s10 4 10 10"/>
+            <path d="M28 40c0-4 2-8 5-8s7 4 7 8"/>
+          </svg>
+          <h3>Better Credit Control</h3>
+          <p>You want robust credit control procedures that prevent problems before they arise.</p>
+          <a class="learn-more" href="#better-credit-control">Learn more &#8594;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPANDED DETAIL SECTIONS ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--3">
+
+        <!-- Recovering a Debt -->
+        <div class="detail-col" id="recovering-a-debt">
+          <div class="detail-col__head">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 6h14l8 8v28H14z"/>
+              <path d="M28 6v8h8"/>
+              <path d="M20 26h10M20 32h6"/>
+              <circle cx="20" cy="20" r="3"/>
+            </svg>
+            <h3>Recovering a Debt</h3>
+          </div>
+          <p><strong style="color:var(--text);">Where money is owed to you, early advice can make all the difference.</strong></p>
+          <p>We can assist with:</p>
+          <ul class="checklist">
+            <li>Reviewing whether the debt should be pursued</li>
+            <li>Assessing the strength of your case</li>
+            <li>Advising on the quickest and most cost-effective route to recovery</li>
+            <li>Preparing letters before action and formal demands</li>
+            <li>Advising on interest, costs and contractual rights</li>
+            <li>Evaluating matters further where payment is still not made</li>
+          </ul>
+          <p>In many cases, a carefully drafted letter from a barrister-led service can resolve the issue without the need for proceedings.</p>
+          <p>Where further action is required, we can advise on the appropriate civil or commercial routes, including the use of courts and winding up petitions where suitable.</p>
+        </div>
+
+        <!-- Responding to a Demand -->
+        <div class="detail-col" id="responding-to-a-demand">
+          <div class="detail-col__head">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M24 6l14 6v12c0 10-6 18-14 20C16 42 10 34 10 24V12l14-6z"/>
+              <path d="M18 24l4 4 8-8"/>
+            </svg>
+            <h3>Responding to a Demand</h3>
+          </div>
+          <p><strong style="color:var(--text);">Not every demand for payment is properly made.</strong></p>
+          <p>If you have received a demand for payment, we can advise you — before you respond, pay, dispute or make any admissions.</p>
+          <p>We can assess where:</p>
+          <ul class="checklist">
+            <li>the debt is disputed</li>
+            <li>there is a right of set-off</li>
+            <li>the amount claimed is incorrect</li>
+            <li>contra accounts have not been applied</li>
+            <li>a debt collection agency is applying inappropriate pressure</li>
+            <li>a statutory demand has been threatened</li>
+          </ul>
+          <p>Debt recovery rules are specific and often misunderstood. We can help you understand your rights, respond correctly and avoid inappropriate pressure.</p>
+        </div>
+
+        <!-- Better Credit Control -->
+        <div class="detail-col" id="better-credit-control">
+          <div class="detail-col__head">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="18" cy="16" r="6"/>
+              <circle cx="33" cy="19" r="5"/>
+              <path d="M8 40c0-6 5-10 10-10s10 4 10 10"/>
+              <path d="M28 40c0-4 2-8 5-8s7 4 7 8"/>
+            </svg>
+            <h3>Better Credit Control</h3>
+          </div>
+          <p><strong style="color:var(--text);">Good debt recovery starts before the debt arises.</strong></p>
+          <p>We can help businesses design a practical credit control process that protects cash flow while preserving relationships with customers and clients.</p>
+          <p>This may include:</p>
+          <ul class="checklist">
+            <li>Scripted reminder processes</li>
+            <li>Staged letter templates and formal paper</li>
+            <li>Terms of business and payment clauses</li>
+            <li>Escalation and instructional clauses</li>
+            <li>Guidance on when to pause</li>
+            <li>Check-in reviews</li>
+            <li>Advice on when legal intervention is appropriate and lawful</li>
+          </ul>
+          <p>The aim is simple: to give your business a consistent and professional process for managing payment issues early.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== A HUMAN APPROACH ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="split">
+
+        <div class="img-ph" data-ratio="4-3" data-label="A Human Approach to Recovery"></div>
+
+        <div class="prose">
+          <p class="eyebrow">Our Philosophy</p>
+          <h2>A Human Approach to Recovery</h2>
+          <hr class="rule" />
+          <p>Debt recovery does not have to be aggressive to be effective.</p>
+          <p>We balance the commercial need to secure what is owed by combining legal pressure with commercial judgment.</p>
+          <p>Some cases require a firm and immediate response. Others require a measured approach that preserves relationships and opens a dialogue.</p>
+          <p>Our role is to help you recover what is owed, protect your position and avoid unnecessary escalation wherever possible.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT STRIP ===================== -->
+  <section class="section section--deep">
+    <div class="container">
+      <div class="contact-strip">
+
+        <div>
+          <p class="eyebrow">For Businesses and Individuals</p>
+          <p style="color:var(--text-soft); font-size:0.93rem; margin-bottom:0.7rem;">This service is available to companies, directors, sole traders and private individuals.</p>
+          <p style="color:var(--text-soft); font-size:0.93rem; margin:0;">Whether you are seeking payment, resisting a demand, or considering whether a debt should be pursued or paid, we can provide clear, practical advice at an early stage.</p>
+          <a class="btn btn--primary" data-calendly href="contact.html" style="margin-top:1.4rem;">Speak to a Specialist</a>
+        </div>
+
+        <div class="contact-strip__divider" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 36l8-8 6 6 12-16 8 8"/>
+            <rect x="4" y="8" width="40" height="32" rx="3"/>
+          </svg>
+        </div>
+
+        <div>
+          <p class="eyebrow">Speak to Veritas</p>
+          <ul class="contact-details">
+            <li>
+              <svg style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px;color:var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .92h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <a href="tel:+442036177200">+44 (0) 20 3617 7200</a>
+            </li>
+            <li>
+              <svg style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px;color:var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:clerks@veritaschambers.co.uk">clerks@veritaschambers.co.uk</a>
+            </li>
+            <li>
+              <svg style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px;color:var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              veritaschambers.co.uk
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <span class="brand__name" style="font-size:1.2rem;">VERITAS<small>COUNSEL</small></span>
+          <p style="margin-top:1rem; max-width:34ch;">Elite barristers. Practical protection. Direct access to senior legal minds.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="what-we-do.html">What We Do</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a data-calendly href="contact.html">Book a call →</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__legal">
+        Veritas Counsel. Registered in England &amp; Wales, company no. 15700046.
+        © <span id="year">2026</span> Veritas Counsel. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

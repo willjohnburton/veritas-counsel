@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What We Do — Veritas Counsel</title>
+  <meta name="description" content="Corporate Protection Programme, Annual Subscription Service and individual legal protection. Strategic protection. Practical solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ── What We Do — page-specific additions (CSS variables only) ── */
+
+    /* Hero */
+    .hero-wwd {
+      background: linear-gradient(170deg, var(--navy-850) 40%, var(--navy-950) 100%);
+      padding-block: clamp(64px, 10vw, 130px);
+    }
+    .hero-wwd .container {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: clamp(28px, 5vw, 64px);
+      align-items: center;
+    }
+    .hero-wwd h1 { margin-bottom: 0.5rem; }
+    .hero-wwd .wwd-accent { color: var(--accent); }
+    .hero-wwd .hero-italic {
+      font-family: var(--ff-serif);
+      font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+      font-style: italic;
+      color: var(--accent);
+      margin-bottom: 0;
+    }
+
+    /* Intro band */
+    .intro-band {
+      background: var(--navy-800);
+      padding-block: clamp(20px, 3.5vw, 36px);
+      border-block: 1px solid var(--line);
+    }
+    .intro-band p {
+      font-size: clamp(1rem, 1.5vw, 1.15rem);
+      color: var(--text-soft);
+      max-width: 76ch;
+      margin-inline: auto;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    /* Card sub-heading (Included in the fee) */
+    .card__sub-head {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin: 1.2rem 0 0.7rem;
+      padding-top: 1.1rem;
+      border-top: 1px solid var(--line);
+    }
+
+    /* Small footnote text within card */
+    .card__note {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.88rem;
+      color: var(--text-mute);
+      margin-bottom: 0;
+    }
+
+    /* Icon + text rows at bottom of Additional Corporate Services */
+    .card__info-rows { margin-top: 1.2rem; display: grid; gap: 0; }
+    .card__info-row {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+    }
+    .card__info-row svg { color: var(--accent); flex-shrink: 0; }
+    .card__info-row p { font-size: 0.88rem; color: var(--text-soft); margin: 0; }
+
+    /* Upper-case card headings for service cards */
+    .card--upper h3 {
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+      margin-bottom: 0.9rem;
+    }
+
+    /* Italic accent tagline inside Individual Protection */
+    .indiv-italic {
+      font-family: var(--ff-serif);
+      font-style: italic;
+      color: var(--accent);
+      font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+      margin-bottom: 0.8rem;
+      margin-top: 0.2rem;
+    }
+
+    /* Lower two-column layout: Individual + Instruct */
+    .wwd-lower-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.7fr;
+      gap: clamp(28px, 5vw, 64px);
+      align-items: start;
+    }
+
+    /* "If you wish to instruct us" block */
+    .instruct-block { }
+    .instruct-block > svg { color: var(--accent); margin-bottom: 1rem; }
+    .instruct-block h3 {
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: clamp(1rem, 1.8vw, 1.25rem);
+      margin-bottom: 1.4rem;
+      color: var(--accent);
+    }
+
+    /* Two side-by-side checklists */
+    .instruct-lists {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 2.5rem;
+      align-items: start;
+    }
+
+    /* Two-column box row */
+    .boxes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(20px, 3vw, 34px);
+    }
+
+    /* Closing CTA */
+    .cta-closing { text-align: center; }
+    .cta-closing p {
+      font-family: var(--ff-serif);
+      font-size: clamp(1.25rem, 2.5vw, 1.85rem);
+      color: var(--text);
+      max-width: 58ch;
+      margin-inline: auto;
+      line-height: 1.55;
+      margin-bottom: 1.5rem;
+    }
+    .cta-closing em { font-style: italic; color: var(--accent); }
+    .cta-closing .cta-icon { color: var(--accent-soft); }
+
+    /* Responsive collapses */
+    @media (max-width: 820px) {
+      .hero-wwd .container { grid-template-columns: 1fr; }
+      .wwd-lower-grid { grid-template-columns: 1fr; }
+      .boxes-grid { grid-template-columns: 1fr; }
+      .instruct-lists { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" id="nav">
+        <a class="brand" href="index.html" aria-label="Veritas Counsel home">
+          <svg class="brand__mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M24 4v40M9 14h30M14 14l-7 13a7 7 0 0014 0L14 14zM34 14l-7 13a7 7 0 0014 0L34 14z" stroke="#9e1b32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="24" cy="44" r="2.4" fill="#9e1b32"/>
+          </svg>
+          <span class="brand__name">VERITAS<small>COUNSEL</small></span>
+        </a>
+
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav__menu">
+          <li class="has-dropdown">
+            <a class="nav__link" href="about.html">About Us
+              <svg class="caret" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <ul class="dropdown">
+              <li><a href="why-choose-us.html">Why Choose Us</a></li>
+              <li><a href="what-we-do.html">What We Do</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a class="nav__link" href="what-we-do.html">Services
+              <svg class="caret" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <ul class="dropdown">
+              <li><a href="corporate-protection.html">Corporate Protection Programme™</a></li>
+              <li><a href="corporate-debt-recovery.html">Corporate Debt Recovery Programme™</a></li>
+              <li><a href="lifetime-planning.html">Corporate Lifetime Planning Programme™</a></li>
+              <li><a href="what-we-do.html">Corporate Training Programme™</a></li>
+            </ul>
+          </li>
+          <li><a class="nav__link" href="how-it-works.html">How It Works</a></li>
+          <li><a class="nav__link" href="membership.html">Membership</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav__cta">
+          <a class="btn btn--primary" data-calendly href="contact.html">Speak to a Specialist</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero-wwd">
+    <div class="container">
+      <div>
+        <h1>WHAT <span class="wwd-accent">WE</span> DO</h1>
+        <hr class="rule" />
+        <p class="lead">Strategic protection. Practical solutions.</p>
+        <p class="hero-italic">Clear advice. Real value. In your control.</p>
+      </div>
+      <div class="img-ph" data-ratio="4-3" data-label="Office scene — desk and legal documents"></div>
+    </div>
+  </section>
+
+  <!-- ===================== INTRO BAND ===================== -->
+  <div class="intro-band">
+    <div class="container">
+      <p>We provide corporate and individual legal protection that is <strong>proactive, practical and personal.</strong></p>
+    </div>
+  </div>
+
+  <!-- ===================== THREE SERVICES ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="grid grid--3">
+
+        <!-- Corporate Protection Programme -->
+        <div class="card card--upper">
+          <svg class="card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 4l14 5.5v10c0 10-6 16.5-14 19-8-2.5-14-9-14-19V9.5L20 4z"/>
+          </svg>
+          <h3>Corporate Protection Programme</h3>
+          <p>Our Corporate Protection Programme gives your business access to elite legal counsel for a fixed consultation fee.</p>
+          <p>We complete a health check, review and have a conversation about any aspect of the workplace for your business, or for you as an employer (including employees or directors).</p>
+        </div>
+
+        <!-- Annual Subscription Service -->
+        <div class="card card--upper">
+          <svg class="card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="4" y="8" width="32" height="28" rx="2"/>
+            <path d="M4 16h32M14 4v8M26 4v8"/>
+            <path d="M11 24h4M19 24h4M27 24h4M11 30h4M19 30h4"/>
+          </svg>
+          <h3>Annual Subscription Service</h3>
+          <p>An economical fixed cost you can terminate at year end or continue.</p>
+          <p>We keep costs low by providing first line answers and assessing matters early.</p>
+          <p class="card__sub-head">Included in the fee:</p>
+          <ul class="checklist">
+            <li>Letters and advice</li>
+            <li>Contracts</li>
+            <li>All non-contentious work</li>
+          </ul>
+          <p class="card__note">Any additional contentious work requiring further steps (such as litigation, including letter before action) is charged separately.</p>
+        </div>
+
+        <!-- Additional Corporate Services -->
+        <div class="card card--upper">
+          <svg class="card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="18" width="34" height="18" rx="1"/>
+            <path d="M8 18V12a2 2 0 012-2h20a2 2 0 012 2v6"/>
+            <path d="M15 36V27h10v9M20 4v6"/>
+          </svg>
+          <h3>Additional Corporate Services</h3>
+          <ul class="checklist">
+            <li>Corporate Will Service</li>
+            <li>Corporate Debt Recovery Service</li>
+            <li>Practical Training for your team</li>
+          </ul>
+          <div class="card__info-rows">
+            <div class="card__info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+              <p>Practical, relevant and engaging training that delivers real-world support – not boring theory.</p>
+            </div>
+            <div class="card__info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M14.5 9a3.5 3.5 0 00-6 2.5c0 2.5 2.5 3.5 4 4.5M8 17h8"/>
+                <path d="M12 6v1.5M12 17v1.5"/>
+              </svg>
+              <p>More cost-effective than employing in-house.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INDIVIDUAL PROTECTION + INSTRUCT ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="wwd-lower-grid">
+
+        <!-- Individual Protection -->
+        <div class="card card--upper">
+          <svg class="card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="20" cy="13" r="7"/>
+            <path d="M4 38c0-8.8 7.2-16 16-16s16 7.2 16 16"/>
+          </svg>
+          <h3>Individual Protection</h3>
+          <p class="indiv-italic">Engage early. Protect yourself.</p>
+          <p>We offer a no fee conversation over the phone or in person to discuss your matter.</p>
+          <p>You'll receive transparent, clear and simple advice. We give you the strengths and weaknesses of your case at the outset, based on the information you provide.</p>
+        </div>
+
+        <!-- If you wish to instruct us -->
+        <div class="instruct-block">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="38" height="38" aria-hidden="true">
+            <path d="M20 6v28M10 6h20"/>
+            <path d="M6 16l-4 8h8l-4-8zM34 16l-4 8h8l-4-8z"/>
+            <path d="M12 34h16"/>
+          </svg>
+          <h3>If you wish to instruct us, we offer:</h3>
+          <div class="instruct-lists">
+            <ul class="checklist">
+              <li>A clear path</li>
+              <li>Straightforward advice ("no nonsense") – we tell you the good and the bad (strengths and weaknesses)</li>
+              <li>Keep you in full control – we provide you drafts of each step</li>
+              <li>Set out each step at the outset</li>
+              <li>Give an overview on chances of success</li>
+              <li>Never deviate from our mantra</li>
+            </ul>
+            <ul class="checklist">
+              <li>Set out fixed fees so you can pick and choose when to stop, or whether to even start</li>
+              <li>Set out a strategy from the beginning</li>
+              <li>Offer no win no fees on some cases</li>
+              <li>Potentially offer insurance backed introductions for before the event or after the event insurance (to protect against litigation risk) which we explain in clear language if your case needs it.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CORPORATES + CHEAPER ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="boxes-grid">
+
+        <div class="card card--upper">
+          <svg class="card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 38V18L20 8l16 10v20H4zM14 38V28h12v10"/>
+            <path d="M12 20h4M24 20h4M12 26h4M24 26h4"/>
+          </svg>
+          <p class="eyebrow">For Corporates (not individuals)</p>
+          <p>Don't forget we do training which is more aligned with practical assistance to your teams as opposed to boring training.</p>
+        </div>
+
+        <div class="card card--upper">
+          <svg class="card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="20" cy="20" r="17"/>
+            <path d="M25 14a6 6 0 00-10 4.5c0 5 6 7 6 7s-6 2-6 5"/>
+            <path d="M20 10v2M20 28v2"/>
+          </svg>
+          <p class="eyebrow">And we are</p>
+          <h3>Cheaper than an employee.</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CLOSING CTA ===================== -->
+  <section class="section section--deep cta-closing">
+    <div class="container">
+      <p>We are with you from the outset – <em>protecting you</em> before problems escalate and standing with you if they don't.</p>
+      <svg class="cta-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" aria-hidden="true">
+        <path d="M24 4l16 6.5v12c0 11.5-7 18.5-16 21-9-2.5-16-9.5-16-21V10.5L24 4z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <span class="brand__name" style="font-size:1.2rem;">VERITAS<small>COUNSEL</small></span>
+          <p style="margin-top:1rem; max-width:34ch;">Elite barristers. Practical protection. Direct access to senior legal minds.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="what-we-do.html">What We Do</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a data-calendly href="contact.html">Book a call →</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__legal">
+        Veritas Counsel. Registered in England &amp; Wales, company no. 15700046.
+        © <span id="year">2026</span> Veritas Counsel. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
